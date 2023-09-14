@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:coleta_seletiva/pages/mainPage.dart';
+import 'package:coleta_seletiva/pages/Menu.dart';
 import 'package:coleta_seletiva/pages/loginPages/resetSenha.dart';
 import 'package:coleta_seletiva/pages/loginPages/cadastrarPage.dart';
 
@@ -15,6 +15,7 @@ class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //representa a tela
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
@@ -68,7 +69,7 @@ class _loginState extends State<login> {
                   //navegar para proxima pagina quando botao é pressionado
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => mainPage()),
+                    MaterialPageRoute(builder: (context) => Menu()),
                   );
                 },
                 style: ElevatedButton.styleFrom(primary: Colors.green),
