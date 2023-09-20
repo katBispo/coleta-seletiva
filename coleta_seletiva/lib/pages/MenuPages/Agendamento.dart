@@ -46,7 +46,7 @@ class _AgendamentoState extends State<Agendamento> {
               ),
               Divider(),
               Text(
-                'Tipo de Denúncia',
+                'Tipo de Material',
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.green,
@@ -68,7 +68,7 @@ class _AgendamentoState extends State<Agendamento> {
                   SizedBox(
                     width: 10.0,
                   ),
-                  Text("Descarte Irregular"),
+                  Text("Entulho"),
                 ],
               ),
               Row(
@@ -86,7 +86,7 @@ class _AgendamentoState extends State<Agendamento> {
                   SizedBox(
                     width: 10.0,
                   ),
-                  Text("Falta de Coleta"),
+                  Text("Recicláveis"),
                 ],
               ),
               Row(
@@ -104,7 +104,7 @@ class _AgendamentoState extends State<Agendamento> {
                   SizedBox(
                     width: 10.0,
                   ),
-                  Text("Obstrução de Patrimônio"),
+                  Text("Eletrônicos"),
                 ],
               ),
               Row(
@@ -122,8 +122,72 @@ class _AgendamentoState extends State<Agendamento> {
                   SizedBox(
                     width: 10.0,
                   ),
-                  Text("Outro"),
+                  Text("Madeira"),
                 ],
+              ),
+              Row(
+                children: [
+                  Radio(
+                    value: 5,
+                    groupValue: _value,
+                    onChanged: (int? value) {
+                      setState(() {
+                        _value =
+                            value!; //!valor nao nulo,estou afirmando que nao será nulo
+                      });
+                    },
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text("Pneus"),
+                ],
+              ),
+              Row(
+                children: [
+                  Radio(
+                    value: 6,
+                    groupValue: _value,
+                    onChanged: (int? value) {
+                      setState(() {
+                        _value =
+                            value!; //!valor nao nulo,estou afirmando que nao será nulo
+                      });
+                    },
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text("Volumosos"),
+                ],
+              ),
+              Row(
+                children: [
+                  Radio(
+                    value: 7,
+                    groupValue: _value,
+                    onChanged: (int? value) {
+                      setState(() {
+                        _value =
+                            value!; //!valor nao nulo,estou afirmando que nao será nulo
+                      });
+                    },
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text("Podas e Capinas"),
+                ],
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  //  Navigator.push(
+                  //ADICIONAR POP UP
+                  // );
+                },
+                style: ElevatedButton.styleFrom(
+                    primary: Colors.green), // Altere para a cor desejada
+                child: Text('AGENDAR'), // Texto do botão
               ),
             ], //childrem
           ),

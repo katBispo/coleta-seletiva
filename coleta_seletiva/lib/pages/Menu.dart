@@ -25,7 +25,7 @@ class _MenuState extends State<Menu> {
                 width: 100,
                 height: 100,
               ),
-              Divider(),
+              SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
                   //navegar para proxima pagina quando pressionado
@@ -37,6 +37,7 @@ class _MenuState extends State<Menu> {
                 style: ElevatedButton.styleFrom(primary: Colors.green),
                 child: Text('DENÚNCIAS'),
               ),
+              SizedBox(height: 10),
               /* ElevatedButton(
             onPressed:(){
               Navigator.push(
@@ -45,7 +46,7 @@ class _MenuState extends State<Menu> {
               );
             },
           ),**/ //elevated Buttons
-              Divider(),
+              // SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(

@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:coleta_seletiva/pages/loginPages/login.dart';
+import 'package:coleta_seletiva/pages/home.dart';
+
+void main() {
+  runApp(MaterialApp(home: home()));
+}
 
 class HomePage extends StatelessWidget {
   @override

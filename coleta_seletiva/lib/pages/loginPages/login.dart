@@ -15,7 +15,6 @@ class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //representa a tela
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
